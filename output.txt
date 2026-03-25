@@ -1,0 +1,93 @@
+Invalid library item line: Monmouth University
+Reason: Wrong number of fields
+Invalid library item line: West Long Branch
+Reason: Wrong number of fields
+Invalid library item line: February
+Reason: Wrong number of fields
+Invalid library item line: Cloud Computing
+Reason: Wrong number of fields
+Invalid library item line: Data Structures
+Reason: Wrong number of fields
+Invalid library item line: MacBook
+Reason: Wrong number of fields
+Invalid library item line: Spacex
+Reason: Wrong number of fields
+STRING LIST TESTS
+isEmpty(): false
+size(): 7
+
+iterator():
+Monmouth University
+West Long Branch
+February
+Cloud Computing
+Data Structures
+MacBook
+Spacex
+
+listIterator() forward:
+Monmouth University
+West Long Branch
+February
+Cloud Computing
+Data Structures
+MacBook
+Spacex
+
+listIterator() reverse:
+Spacex
+MacBook
+Data Structures
+Cloud Computing
+February
+West Long Branch
+Monmouth University
+
+add():
+Index 0: Monmouth University
+Index 1: West Long Branch
+Index 2: February
+Index 3: Cloud Computing
+Index 4: Data Structures
+Index 5: MacBook
+Index 6: Spacex
+Index 7: Added String
+
+remove(index):
+Removed: Monmouth University
+Index 0: West Long Branch
+Index 1: February
+Index 2: Cloud Computing
+Index 3: Data Structures
+Index 4: MacBook
+Index 5: Spacex
+Index 6: Added String
+
+size() after add/remove: 7
+
+LIBRARY ITEM LIST TESTS
+isEmpty(): true
+size(): 0
+
+iterator():
+
+listIterator() forward:
+
+listIterator() reverse:
+
+add():
+Error adding Book: The book must be 1 pages long.
+
+remove(index):
+Library item list is empty.
+
+contains() with Book:
+Book contains test failed: The book must be 1 pages long.
+
+remove(object) with Journal:
+Added Journal for remove(object) test:
+Index 0: Journal [Title: Added Journal, Editor: Added Editor, Volume: 7, Status: ONSHELF]
+remove(known Journal): true
+remove(unknown Journal): false
+
+size() after add/remove: 0
