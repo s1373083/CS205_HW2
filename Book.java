@@ -76,6 +76,19 @@ public class Book implements LibraryItem {
 		}
 		
 		@Override
+		public boolean equals(Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (obj == null || !(obj instanceof Book)) {
+				return false;
+			}
+			
+			Book other = (Book) obj;
+				return title.equals(other.title) && author.equals(other.author); 
+			}
+		
+		@Override
 		public String toString() {
 			return "Book [Title: " +title+ ", Author: " +author+ ", Pages: " +pages+ ", Status: " +status+ "]";
 		}

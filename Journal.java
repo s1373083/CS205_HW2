@@ -72,6 +72,18 @@ public class Journal implements LibraryItem {
 		public void setStatus(StatusType status) {
 			this.status= status;
 		}
+		@Override 
+		public boolean equals (Object obj) {
+			if (this == obj) {
+				return true;
+			}
+			if (obj == null || !(obj instanceof Journal)) {
+				return false;
+			}
+			
+			Journal other = (Journal) obj;
+			return title.equals(other.title) && editor.equals(other.editor) && volume == other.volume; 
+		}
 		
 		@Override
 		public String toString() {
